@@ -7,5 +7,7 @@ This repository showcases my cybersecurity home lab projects, which are a collec
 
 ## Table of Contents
 
-### 1.Introduction to Linux Terminal Commands and Basic Security
+### 1.Linux Terminal Commands and Basic Security
+[Linux Terminal and Basic Security](Linux%20Terminal%20and%20Basic%20Security.md)
+
 
