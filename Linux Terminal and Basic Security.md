@@ -1,4 +1,4 @@
-## Introduction to Linux Terminal Commands and Basic Security
+# Introduction to Linux Terminal Commands and Basic Security
 
-# Update and Upgrade of System
+## Update and Upgrade of System
 ![update](images/updatesystem.png)
