@@ -34,6 +34,12 @@ By adding Sally to the sudo group on the server, it allows the user to access su
 I exited back to my usual user and created the cybersec group using the sudo groupadd command. Then I added Sally to that group using the sudo usermod -a -G cybersec Sally command. Finally I checked Sally's groups in order to confirm whether the command went through or not. 
 
 ## Permission and Access Control Lists:
+![PandAList1](iamges/PermissionandAccessControlList.png)
+In this portion I created a new directory called Lab1 then changed my current directory to the lab1 with the cd command. After that I created the helloWorld bash script file using the nano command, finally making the file executable by using the chmod u+x helloWorld command. 
+![PandAlist2](images/PandAList.png)
+After executing the ls -la helloWorld command you see that the user has the ability to read, write, and execute the file. Where as the group has the ability to read and write and other users only have the option to read the file. Then using the chmod 730 command I give the group only access to write and execute the helloWorld file.
+![PandAList3](images/ProcessandAccessFinal.png)
+I use the getfacl command on the helloWorld file to see the ACL. Then I use the setfacl command to allow the user Sally to read and write the helloWorld file.
 
 
 
