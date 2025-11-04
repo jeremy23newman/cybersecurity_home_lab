@@ -32,7 +32,7 @@
 
 
 ## Task 7:
-![PandAList1](iamges/task27.png)
+![PandAList1](images/task27.png)
 
 ![UserTask1](images/task27(2).png)
 
