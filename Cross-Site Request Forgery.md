@@ -20,8 +20,8 @@ Web page of malicious site
 There were two differnt attacks showcased on the malicious website, one of them was a link that you would 
 have to click in oorder for the request forgery to steal $25 dollars from bob's account and transfer it to alice's.
 The second type of get attack was done using img src code which automatically ran everytime the page was opened. Img code 
-usually is meant for images that are loaded at the request to open the website. Thus in this case instead of pointing to an img url, the code points
-to a get request to transfer $15  dollars from Bob's account to Alice"s account.
+usually is meant for images that are loaded at the request to open the website. Thus in this case instead of pointing to an img url,
+the code points to a get request to transfer $15  dollars from Bob's account to Alice"s account.
 ![update](images/CSRF4.png)
 img src get request taking away $15
 ![update](images/CSRF5.png)
