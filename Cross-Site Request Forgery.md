@@ -22,6 +22,12 @@ have to click in oorder for the request forgery to steal $25 dollars from bob's 
 The second type of get attack was done using img src code which automatically ran everytime the page was opened. Img code 
 usually is meant for images that are loaded at the request to open the website. Thus in this case instead of pointing to an img url, the code points
 to a get request to transfer $15  dollars from Bob's account to Alice"s account.
+![update](images/CSRF4.png)
+img src get request taking away $15
+![update](images/CSRF5.png)
+the link get request taking away $25(after the $15)
+![update](images/CSRF6.png)
+Terminal showing different get requests
 
 ## Main CSRF vulnerabilities in Website/Program
 
@@ -37,5 +43,7 @@ This way the user would be entirely oblivious to what is being loaded during the
 and the amount transferred which was $10 so that user cannot see it but the request is sent through without any user interference. If the program incorporated 
 a system like Secret Token, the server would realize the request is cross-site and would allow a foreign page to access the secret value. Secret Tokens embeds
 a random secret value into each web page, making it easier for the server to recognize when a request is coming from a different site.
+![update](images/CSRF8.png)
+Hidden Post Request Transferring $10(in the terminal, as well as the code for the post request)
 
 
