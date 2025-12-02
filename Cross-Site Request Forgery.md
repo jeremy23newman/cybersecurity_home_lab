@@ -5,6 +5,15 @@
 I started off the lab by installing the websites and then starting them up. 
 My target site was located at localhost:3000 whilst the malicious site was located at localhost:3001.
 The beginning balance of Bob's account was 500 dollars with the target site only having the ability to transfer money between accounts. 
+![update](images/CSRF1.png)
+Website Start-up/Installation
+![update](images/CSRF2.png)
+Location of target site and malicious site
+![update](images/CSRF3.png)
+Web page of target site
+![update](images/CSRF9.png)
+Web page of malicious site
+
 
 ## Get Attack Summary
 
